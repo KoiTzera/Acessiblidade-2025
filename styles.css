@@ -2,17 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #6d6d6d;
+    --laranja-claro: #3f3f3f;
 }
 
 body {
-    background-color: #807e7e;
+    background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDRxanlmOXJqbzNhdjhsMHM4Zmt0eHcyM2h1YnB4em9kb2FzMWUwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H6yzZcjRymlWAxDICb/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
     font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 header {
     background-color: #444444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 
@@ -26,12 +33,20 @@ section {
     font-weight: 600;
 }
 
+.nav-link:hover {
+    color: #03ad28
+}
+
+.nav-link:active {
+    color: #03ad28
+}
+
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('file:///tmp/guest-ufrsfa/Downloads/AMDeNVIDIA.png');
+    background-image: url('img/AMDeNVIDIA\ \(5\).png');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
-    background-position: right;
+    background-position: left;
     border-radius: 80px;
     width: 100%;
     height: 606px;
@@ -63,11 +78,16 @@ section {
     border: none;
     width: 14em;
     height: 3em;
-    position: absolute; /* Adiciona posicionamento absoluto */
-    top: 77%; /* Ajuste a posição vertical */
-    left: 25%; /* Ajuste a posição horizontal */
-    transform: translate(-50%, -50%); /* Centraliza o botão */
+    position: absolute;
+    /* Adiciona posicionamento absoluto */
+    top: 58%;
+    /* Ajuste a posição vertical */
+    left: 25%;
+    /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%);
+    /* Centraliza o botão */
     align-content: center;
+
 }
 
 
@@ -82,7 +102,7 @@ section {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem !important;
     background: url('') top right no-repeat,
         url('') bottom left no-repeat;
     background-size: 180px 180px;
@@ -103,17 +123,22 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: #ffffff;
 }
 
-#galeria {
-    background-color: #807e7e;
+p {
+    color: rgb(0, 0, 0);
 
+}
+
+.galeria {
+    background-color: #807e7e;
+    border-radius: 6px;
+    margin-top: 14rem;
 }
 
 .fundo-galeria {
-    background: url('') bottom right no-repeat;
-    background-size: 180px 180px;
+    border-radius: 4px;
 }
 
 #contato {
@@ -144,4 +169,21 @@ h2 {
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #444444;
+    z-index: 999;
+}
+
+footer p {
+    color: white;
+}
+
+footer i {
+    color: white;
 }
